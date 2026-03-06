@@ -239,18 +239,22 @@ ul {
 }
 
 .hero-brand em {
-    font-family: var(--font-script);
-    color: var(--color-gold);
-    font-size: 0.6em;
-    vertical-align: middle;
+    font-family: var(--font-display);
+    color: var(--color-white);
+    font-size: 1em;
+    font-style: italic;
+    vertical-align: baseline;
 }
 
 .hero-subtitle {
-    color: rgba(255,255,255,0.7);
-    font-size: 1.1rem;
+    color: rgba(255,255,255,0.85);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
     max-width: 600px;
     margin: 0 auto 30px;
     line-height: 1.7;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .hero-meta {
@@ -1838,6 +1842,157 @@ ul {
 }
 
 /* =============================================
+   AI-GENERATED IMAGE RENDERS
+   ============================================= */
+.ai-render-block {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(255, 184, 48, 0.08), rgba(139, 37, 0, 0.06));
+    border-radius: 16px;
+    border: 2px dashed var(--color-gold);
+    position: relative;
+}
+
+.ai-render-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-gold-dark));
+    color: var(--color-white);
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+}
+
+.ai-render-img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.ai-render-img:hover {
+    transform: scale(1.02);
+}
+
+.ai-render-logo {
+    max-width: 500px;
+    width: 100%;
+}
+
+.ai-render-banner {
+    max-width: 100%;
+    width: 100%;
+}
+
+.ai-render-caballete {
+    max-width: 450px;
+    width: 100%;
+}
+
+.ai-render-caption {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    font-style: italic;
+    font-family: var(--font-body);
+}
+
+/* Dark section override */
+.section-dark .ai-render-block {
+    background: linear-gradient(135deg, rgba(255, 184, 48, 0.1), rgba(212, 160, 84, 0.08));
+    border-color: var(--color-gold-dark);
+}
+
+.section-dark .ai-render-caption {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- Logo Options Grid --- */
+.logo-options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .logo-options-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Logo Combined (imagen IA + tipografía real) --- */
+.logo-combined {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 2rem;
+}
+
+.logo-combined-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.logo-combined-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.lt-dulce {
+    font-family: var(--font-display);
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #8B2500;
+    letter-spacing: 12px;
+    line-height: 1;
+    text-shadow: 0 2px 4px rgba(139, 37, 0, 0.15);
+}
+
+.lt-y {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: var(--color-gold);
+    line-height: 1;
+    margin: -4px 0;
+    text-shadow: 0 1px 2px rgba(212, 160, 84, 0.3);
+}
+
+.lt-salado {
+    font-family: var(--font-display);
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #5C3A1E;
+    letter-spacing: 12px;
+    line-height: 1;
+    text-shadow: 0 2px 4px rgba(92, 58, 30, 0.12);
+}
+
+@media (max-width: 600px) {
+    .logo-combined-img {
+        max-width: 300px;
+    }
+    .lt-dulce,
+    .lt-salado {
+        font-size: 2.6rem;
+        letter-spacing: 6px;
+    }
+    .lt-y {
+        font-size: 1.8rem;
+    }
+}
+
+/* =============================================
    BACK TO TOP
    ============================================= */
 .back-to-top {
@@ -2024,5 +2179,283 @@ ul {
     .section {
         padding: 40px 0;
         break-inside: avoid;
+    }
+}
+
+/* =============================================
+   COTIZACIÓN / PRICING SECTION
+============================================== */
+.pricing-reveal {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.pricing-reveal-title {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--color-dark);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-market-list {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.pricing-market-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.pricing-market-item:last-child {
+    border-bottom: none;
+}
+
+.pm-service {
+    font-size: 0.95rem;
+    color: var(--color-dark);
+}
+
+.pm-price {
+    font-weight: 700;
+    color: #999;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.pm-price.strikethrough {
+    text-decoration: line-through;
+    text-decoration-color: #e94560;
+    text-decoration-thickness: 2px;
+    color: #bbb;
+}
+
+.pm-total {
+    padding-top: 16px;
+    margin-top: 8px;
+    border-top: 2px solid var(--color-dark) !important;
+}
+
+.pm-total .pm-service {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.pm-total .pm-price {
+    font-size: 1.1rem;
+}
+
+.pricing-reveal-deal {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #fff8e7 0%, #fff0d0 100%);
+    border-radius: 16px;
+    border: 3px dashed var(--color-gold);
+    position: relative;
+}
+
+.deal-arrow {
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    animation: bounceDown 1.5s ease infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes bounceDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+.deal-message {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+}
+
+.deal-price {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 900;
+    color: #e94560;
+    line-height: 1;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 10px rgba(233,69,96,0.2);
+}
+
+.deal-includes {
+    font-size: 0.85rem;
+    color: #888;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Pricing Options */
+.pricing-options {
+    margin-top: 20px;
+}
+
+.pricing-options-title {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--color-dark);
+    margin-bottom: 30px;
+}
+
+.pricing-option-card {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pricing-option-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.pricing-option-card.po-featured {
+    border-color: var(--color-gold);
+    background: linear-gradient(to bottom, #fffdf5, #fff);
+    box-shadow: 0 6px 30px rgba(255,184,48,0.2);
+}
+
+.po-badge {
+    display: inline-block;
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.po-badge-featured {
+    background: linear-gradient(135deg, var(--color-gold), #f0a000);
+    color: var(--color-dark);
+}
+
+.po-title {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+}
+
+.po-desc {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.po-breakdown {
+    margin-bottom: 20px;
+}
+
+.po-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.po-line:last-child {
+    border-bottom: none;
+}
+
+.po-line-price {
+    font-weight: 700;
+    color: var(--color-primary);
+    white-space: nowrap;
+}
+
+.po-line-print {
+    color: #666;
+    font-style: italic;
+}
+
+.po-separator {
+    height: 1px;
+    background: var(--color-gold);
+    margin: 12px 0;
+    opacity: 0.5;
+}
+
+.po-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 2px solid var(--color-dark);
+    margin-top: 10px;
+}
+
+.po-total-label {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.po-total-price {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #e94560;
+}
+
+.po-note {
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: #999;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.pricing-transparency {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 30px;
+    background: var(--color-white);
+    border-radius: 12px;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.7;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+    .pricing-reveal {
+        padding: 24px 16px;
+    }
+    .deal-price {
+        font-size: 3rem;
+    }
+    .pricing-option-card {
+        padding: 24px 20px;
+    }
+    .pm-service {
+        font-size: 0.85rem;
+    }
+    .pm-price {
+        font-size: 0.85rem;
     }
 }
