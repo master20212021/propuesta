@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B2500;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0321A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B2500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="200" fill="url(#bgGrad3)" rx="10"/>
+  
+  <!-- Decorative top/bottom lines -->
+  <rect x="15" y="10" width="470" height="2" fill="#FFB830" rx="1"/>
+  <rect x="15" y="188" width="470" height="2" fill="#FFB830" rx="1"/>
+  
+  <!-- Empanada icon left -->
+  <g transform="translate(30, 85)">
+    <path d="M0,20 Q20,-10 40,20 Q20,28 0,20Z" fill="#E8B84D" stroke="#FFB830" stroke-width="1.5"/>
+    <path d="M4,19 Q8,13 12,19 Q16,13 20,19 Q24,13 28,19 Q32,13 36,19" fill="none" stroke="#C4872A" stroke-width="1"/>
+  </g>
+  
+  <!-- Brand Name -->
+  <text x="250" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#FFB830" letter-spacing="8" font-weight="bold">¡EMPANADAS!</text>
+  
+  <text x="250" y="115" text-anchor="middle" font-family="'Brush Script MT', cursive" font-size="50" fill="#FFFFFF">Dulce y Salado</text>
+  
+  <!-- Tagline -->
+  <text x="250" y="150" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="13" fill="#FFD700" letter-spacing="4">COMFORTING FLAVOR IN EVERY BITE</text>
+  <text x="250" y="172" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#FFFFFF" opacity="0.7" letter-spacing="2">SABOR QUE TE RECONFORTA</text>
+  
+  <!-- Empanada icon right -->
+  <g transform="translate(430, 85)">
+    <path d="M0,20 Q20,-10 40,20 Q20,28 0,20Z" fill="#E8B84D" stroke="#FFB830" stroke-width="1.5"/>
+    <path d="M4,19 Q8,13 12,19 Q16,13 20,19 Q24,13 28,19 Q32,13 36,19" fill="none" stroke="#C4872A" stroke-width="1"/>
+  </g>
+  
+  <!-- Star decorations -->
+  <g fill="#FFB830" opacity="0.6">
+    <circle cx="90" cy="30" r="2"/>
+    <circle cx="410" cy="30" r="2"/>
+    <circle cx="90" cy="170" r="2"/>
+    <circle cx="410" cy="170" r="2"/>
+  </g>
+</svg>
